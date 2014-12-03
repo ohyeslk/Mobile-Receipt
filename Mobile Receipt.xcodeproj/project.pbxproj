@@ -1,0 +1,718 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18A3457F1A15C1340044BD1B /* TesseractOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A3457E1A15C1340044BD1B /* TesseractOCR.framework */; };
+		18A345811A15C5690044BD1B /* PayPalConfiguration.h in Sources */ = {isa = PBXBuildFile; fileRef = 18A345761A15BE7C0044BD1B /* PayPalConfiguration.h */; };
+		18A345821A15C5690044BD1B /* PayPalFuturePaymentViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 18A345771A15BE7C0044BD1B /* PayPalFuturePaymentViewController.h */; };
+		18A345831A15C5690044BD1B /* PayPalMobile.h in Sources */ = {isa = PBXBuildFile; fileRef = 18A345781A15BE7C0044BD1B /* PayPalMobile.h */; };
+		18A345841A15C5690044BD1B /* PayPalOAuthScopes.h in Sources */ = {isa = PBXBuildFile; fileRef = 18A345791A15BE7C0044BD1B /* PayPalOAuthScopes.h */; };
+		18A345851A15C5690044BD1B /* PayPalPayment.h in Sources */ = {isa = PBXBuildFile; fileRef = 18A3457A1A15BE7C0044BD1B /* PayPalPayment.h */; };
+		18A345861A15C5690044BD1B /* PayPalPaymentViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 18A3457B1A15BE7C0044BD1B /* PayPalPaymentViewController.h */; };
+		18A345871A15C5690044BD1B /* PayPalProfileSharingViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 18A3457C1A15BE7C0044BD1B /* PayPalProfileSharingViewController.h */; };
+		18A345891A15C59E0044BD1B /* libPayPalMobile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A345881A15C59E0044BD1B /* libPayPalMobile.a */; };
+		FD1F458019B242410099E89E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD1F457F19B242410099E89E /* Foundation.framework */; };
+		FD1F458219B242410099E89E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD1F458119B242410099E89E /* CoreGraphics.framework */; };
+		FD1F458419B242410099E89E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD1F458319B242410099E89E /* UIKit.framework */; };
+		FD1F458A19B242410099E89E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FD1F458819B242410099E89E /* InfoPlist.strings */; };
+		FD1F458C19B242410099E89E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1F458B19B242410099E89E /* main.m */; };
+		FD1F459019B242410099E89E /* PRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1F458F19B242410099E89E /* PRAppDelegate.m */; };
+		FD1F459319B242410099E89E /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD1F459119B242410099E89E /* Main_iPhone.storyboard */; };
+		FD1F459619B242410099E89E /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD1F459419B242410099E89E /* Main_iPad.storyboard */; };
+		FD1F459919B242410099E89E /* PRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1F459819B242410099E89E /* PRViewController.m */; };
+		FD1F45A219B242410099E89E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD1F45A119B242410099E89E /* XCTest.framework */; };
+		FD1F45A319B242410099E89E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD1F457F19B242410099E89E /* Foundation.framework */; };
+		FD1F45A419B242410099E89E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD1F458319B242410099E89E /* UIKit.framework */; };
+		FD1F45AC19B242410099E89E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FD1F45AA19B242410099E89E /* InfoPlist.strings */; };
+		FD1F45AE19B242410099E89E /* ProjectRefundTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1F45AD19B242410099E89E /* ProjectRefundTests.m */; };
+		FD1F45BC19B244640099E89E /* PRCamPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1F45BB19B244640099E89E /* PRCamPreviewView.m */; };
+		FD1F45C519B264520099E89E /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FD1F45C419B264520099E89E /* libstdc++.6.0.9.dylib */; };
+		FD1F45C719B264BF0099E89E /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD1F45C619B264BF0099E89E /* CoreImage.framework */; };
+		FD1F471A19B277070099E89E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD1F471819B277070099E89E /* CoreData.framework */; };
+		FD1F471B19B277070099E89E /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD1F471919B277070099E89E /* CoreFoundation.framework */; };
+		FD1F471D19B2770C0099E89E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD1F471C19B2770C0099E89E /* AVFoundation.framework */; };
+		FD1F472219B279040099E89E /* tesseract-ios in Resources */ = {isa = PBXBuildFile; fileRef = FD1F471F19B279040099E89E /* tesseract-ios */; };
+		FD1F472319B279040099E89E /* tesseract-ios-lib in Resources */ = {isa = PBXBuildFile; fileRef = FD1F472019B279040099E89E /* tesseract-ios-lib */; };
+		FD1F472619B2794F0099E89E /* UIImage+Filters.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1F472519B2794F0099E89E /* UIImage+Filters.m */; };
+		FD1F473219B27DF20099E89E /* ImageProcessing.mm in Sources */ = {isa = PBXBuildFile; fileRef = FD1F473119B27DF20099E89E /* ImageProcessing.mm */; };
+		FD1F473419B27E5B0099E89E /* OCRScanner.mm in Sources */ = {isa = PBXBuildFile; fileRef = FD1F473319B27E5B0099E89E /* OCRScanner.mm */; };
+		FDBE746F19B2B70800FD68B2 /* RecieptDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDBE746619B2B70800FD68B2 /* RecieptDetailViewController.m */; };
+		FDBE747119B2B70800FD68B2 /* RecieptItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FDBE746A19B2B70800FD68B2 /* RecieptItem.m */; };
+		FDBE747219B2B70800FD68B2 /* RecieptItemStore.m in Sources */ = {isa = PBXBuildFile; fileRef = FDBE746C19B2B70800FD68B2 /* RecieptItemStore.m */; };
+		FDBE747319B2B70800FD68B2 /* RecieptItemTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDBE746E19B2B70800FD68B2 /* RecieptItemTableViewController.m */; };
+		FDBE747619B2C1AD00FD68B2 /* PRTextParser.m in Sources */ = {isa = PBXBuildFile; fileRef = FDBE747519B2C1AD00FD68B2 /* PRTextParser.m */; };
+		FDBE747819B2DB3000FD68B2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDBE747719B2DB3000FD68B2 /* Images.xcassets */; };
+		FDBE747C19B2E0C000FD68B2 /* XYPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = FDBE747B19B2E0C000FD68B2 /* XYPieChart.m */; };
+		FDBE747E19B2E0D000FD68B2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDBE747D19B2E0D000FD68B2 /* QuartzCore.framework */; };
+		FDBE748119B2E14100FD68B2 /* PRTrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDBE748019B2E14100FD68B2 /* PRTrendsViewController.m */; };
+		FDBE748319B2EE0300FD68B2 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = FDBE748219B2EE0300FD68B2 /* tessdata */; };
+		FDBE749219B30A3C00FD68B2 /* PRPayPalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDBE749119B30A3C00FD68B2 /* PRPayPalViewController.m */; };
+		FDBE749419B313D500FD68B2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDBE749319B313D500FD68B2 /* CoreLocation.framework */; };
+		FDBE749619B313DA00FD68B2 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDBE749519B313DA00FD68B2 /* MessageUI.framework */; };
+		FDBE749819B313E500FD68B2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDBE749719B313E500FD68B2 /* SystemConfiguration.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FD1F45A519B242410099E89E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD1F457419B242410099E89E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD1F457B19B242410099E89E;
+			remoteInfo = ProjectRefund;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18A345761A15BE7C0044BD1B /* PayPalConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PayPalConfiguration.h; path = PayPalMobile/PayPalConfiguration.h; sourceTree = SOURCE_ROOT; };
+		18A345771A15BE7C0044BD1B /* PayPalFuturePaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PayPalFuturePaymentViewController.h; path = PayPalMobile/PayPalFuturePaymentViewController.h; sourceTree = SOURCE_ROOT; };
+		18A345781A15BE7C0044BD1B /* PayPalMobile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PayPalMobile.h; path = PayPalMobile/PayPalMobile.h; sourceTree = SOURCE_ROOT; };
+		18A345791A15BE7C0044BD1B /* PayPalOAuthScopes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PayPalOAuthScopes.h; path = PayPalMobile/PayPalOAuthScopes.h; sourceTree = SOURCE_ROOT; };
+		18A3457A1A15BE7C0044BD1B /* PayPalPayment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PayPalPayment.h; path = PayPalMobile/PayPalPayment.h; sourceTree = SOURCE_ROOT; };
+		18A3457B1A15BE7C0044BD1B /* PayPalPaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PayPalPaymentViewController.h; path = PayPalMobile/PayPalPaymentViewController.h; sourceTree = SOURCE_ROOT; };
+		18A3457C1A15BE7C0044BD1B /* PayPalProfileSharingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PayPalProfileSharingViewController.h; path = PayPalMobile/PayPalProfileSharingViewController.h; sourceTree = SOURCE_ROOT; };
+		18A3457E1A15C1340044BD1B /* TesseractOCR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TesseractOCR.framework; path = Products/TesseractOCR.framework; sourceTree = "<group>"; };
+		18A345881A15C59E0044BD1B /* libPayPalMobile.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPayPalMobile.a; path = PayPalMobile/libPayPalMobile.a; sourceTree = SOURCE_ROOT; };
+		FD1F457C19B242410099E89E /* Mobile Receipt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mobile Receipt.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD1F457F19B242410099E89E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FD1F458119B242410099E89E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FD1F458319B242410099E89E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FD1F458719B242410099E89E /* Mobile Receipt-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Mobile Receipt-Info.plist"; sourceTree = "<group>"; };
+		FD1F458919B242410099E89E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FD1F458B19B242410099E89E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FD1F458D19B242410099E89E /* Mobile Receipt-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Mobile Receipt-Prefix.pch"; sourceTree = "<group>"; };
+		FD1F458E19B242410099E89E /* PRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PRAppDelegate.h; sourceTree = "<group>"; };
+		FD1F458F19B242410099E89E /* PRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PRAppDelegate.m; sourceTree = "<group>"; };
+		FD1F459219B242410099E89E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		FD1F459519B242410099E89E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		FD1F459719B242410099E89E /* PRViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PRViewController.h; path = ProjectRefund/PRViewController.h; sourceTree = "<group>"; };
+		FD1F459819B242410099E89E /* PRViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = PRViewController.m; path = ProjectRefund/PRViewController.m; sourceTree = "<group>"; };
+		FD1F45A019B242410099E89E /* Mobile ReceiptTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mobile ReceiptTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD1F45A119B242410099E89E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		FD1F45A919B242410099E89E /* Mobile ReceiptTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Mobile ReceiptTests-Info.plist"; sourceTree = "<group>"; };
+		FD1F45AB19B242410099E89E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FD1F45AD19B242410099E89E /* ProjectRefundTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProjectRefundTests.m; sourceTree = "<group>"; };
+		FD1F45BA19B244640099E89E /* PRCamPreviewView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRCamPreviewView.h; sourceTree = "<group>"; };
+		FD1F45BB19B244640099E89E /* PRCamPreviewView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRCamPreviewView.m; sourceTree = "<group>"; };
+		FD1F45C419B264520099E89E /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
+		FD1F45C619B264BF0099E89E /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		FD1F45D119B265580099E89E /* OCRScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCRScanner.h; path = ../OCRScanner.h; sourceTree = "<group>"; };
+		FD1F471819B277070099E89E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		FD1F471919B277070099E89E /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		FD1F471C19B2770C0099E89E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		FD1F471F19B279040099E89E /* tesseract-ios */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "tesseract-ios"; path = "../../Frameworks:SDKs/Tesseract/tesseract-ios"; sourceTree = "<group>"; };
+		FD1F472019B279040099E89E /* tesseract-ios-lib */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "tesseract-ios-lib"; path = "../../Frameworks:SDKs/Tesseract/tesseract-ios-lib"; sourceTree = "<group>"; };
+		FD1F472419B2794F0099E89E /* UIImage+Filters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Filters.h"; sourceTree = "<group>"; };
+		FD1F472519B2794F0099E89E /* UIImage+Filters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Filters.m"; sourceTree = "<group>"; };
+		FD1F473019B27DF20099E89E /* ImageProcessing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageProcessing.h; sourceTree = "<group>"; };
+		FD1F473119B27DF20099E89E /* ImageProcessing.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ImageProcessing.mm; sourceTree = "<group>"; };
+		FD1F473319B27E5B0099E89E /* OCRScanner.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = OCRScanner.mm; path = ../OCRScanner.mm; sourceTree = "<group>"; };
+		FDBE746519B2B70800FD68B2 /* RecieptDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RecieptDetailViewController.h; path = ProjectRefund/RecieptDetailViewController.h; sourceTree = "<group>"; };
+		FDBE746619B2B70800FD68B2 /* RecieptDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RecieptDetailViewController.m; path = ProjectRefund/RecieptDetailViewController.m; sourceTree = "<group>"; };
+		FDBE746919B2B70800FD68B2 /* RecieptItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecieptItem.h; sourceTree = "<group>"; };
+		FDBE746A19B2B70800FD68B2 /* RecieptItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecieptItem.m; sourceTree = "<group>"; };
+		FDBE746B19B2B70800FD68B2 /* RecieptItemStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecieptItemStore.h; sourceTree = "<group>"; };
+		FDBE746C19B2B70800FD68B2 /* RecieptItemStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecieptItemStore.m; sourceTree = "<group>"; };
+		FDBE746D19B2B70800FD68B2 /* RecieptItemTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RecieptItemTableViewController.h; path = ProjectRefund/RecieptItemTableViewController.h; sourceTree = "<group>"; };
+		FDBE746E19B2B70800FD68B2 /* RecieptItemTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RecieptItemTableViewController.m; path = ProjectRefund/RecieptItemTableViewController.m; sourceTree = "<group>"; };
+		FDBE747419B2C1AD00FD68B2 /* PRTextParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRTextParser.h; sourceTree = "<group>"; };
+		FDBE747519B2C1AD00FD68B2 /* PRTextParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRTextParser.m; sourceTree = "<group>"; };
+		FDBE747719B2DB3000FD68B2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FDBE747A19B2E0C000FD68B2 /* XYPieChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYPieChart.h; sourceTree = "<group>"; };
+		FDBE747B19B2E0C000FD68B2 /* XYPieChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYPieChart.m; sourceTree = "<group>"; };
+		FDBE747D19B2E0D000FD68B2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		FDBE747F19B2E14100FD68B2 /* PRTrendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRTrendsViewController.h; sourceTree = "<group>"; };
+		FDBE748019B2E14100FD68B2 /* PRTrendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRTrendsViewController.m; sourceTree = "<group>"; };
+		FDBE748219B2EE0300FD68B2 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; name = tessdata; path = "../../Frameworks:SDKs/Tesseract/tessdata"; sourceTree = "<group>"; };
+		FDBE749019B30A3C00FD68B2 /* PRPayPalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRPayPalViewController.h; sourceTree = "<group>"; };
+		FDBE749119B30A3C00FD68B2 /* PRPayPalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRPayPalViewController.m; sourceTree = "<group>"; };
+		FDBE749319B313D500FD68B2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		FDBE749519B313DA00FD68B2 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		FDBE749719B313E500FD68B2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD1F457919B242410099E89E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDBE749819B313E500FD68B2 /* SystemConfiguration.framework in Frameworks */,
+				FDBE749619B313DA00FD68B2 /* MessageUI.framework in Frameworks */,
+				18A3457F1A15C1340044BD1B /* TesseractOCR.framework in Frameworks */,
+				FDBE749419B313D500FD68B2 /* CoreLocation.framework in Frameworks */,
+				18A345891A15C59E0044BD1B /* libPayPalMobile.a in Frameworks */,
+				FDBE747E19B2E0D000FD68B2 /* QuartzCore.framework in Frameworks */,
+				FD1F471D19B2770C0099E89E /* AVFoundation.framework in Frameworks */,
+				FD1F471A19B277070099E89E /* CoreData.framework in Frameworks */,
+				FD1F471B19B277070099E89E /* CoreFoundation.framework in Frameworks */,
+				FD1F458219B242410099E89E /* CoreGraphics.framework in Frameworks */,
+				FD1F45C719B264BF0099E89E /* CoreImage.framework in Frameworks */,
+				FD1F45C519B264520099E89E /* libstdc++.6.0.9.dylib in Frameworks */,
+				FD1F458419B242410099E89E /* UIKit.framework in Frameworks */,
+				FD1F458019B242410099E89E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD1F459D19B242410099E89E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD1F45A219B242410099E89E /* XCTest.framework in Frameworks */,
+				FD1F45A419B242410099E89E /* UIKit.framework in Frameworks */,
+				FD1F45A319B242410099E89E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FD1F457319B242410099E89E = {
+			isa = PBXGroup;
+			children = (
+				FD1F459119B242410099E89E /* Main_iPhone.storyboard */,
+				FD1F459419B242410099E89E /* Main_iPad.storyboard */,
+				FDBE746419B2B64700FD68B2 /* ViewControllers */,
+				FDBE746319B2B62C00FD68B2 /* ImageProcessing */,
+				FD1F458519B242410099E89E /* ProjectRefund */,
+				FDBE748619B3095500FD68B2 /* PayPalMobile */,
+				FDBE747919B2E0C000FD68B2 /* XYPieChart */,
+				FD1F45A719B242410099E89E /* ProjectRefundTests */,
+				FD1F457E19B242410099E89E /* Frameworks */,
+				FD1F457D19B242410099E89E /* Products */,
+				FDBE748219B2EE0300FD68B2 /* tessdata */,
+				FD1F472019B279040099E89E /* tesseract-ios-lib */,
+				FD1F471F19B279040099E89E /* tesseract-ios */,
+			);
+			sourceTree = "<group>";
+		};
+		FD1F457D19B242410099E89E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD1F457C19B242410099E89E /* Mobile Receipt.app */,
+				FD1F45A019B242410099E89E /* Mobile ReceiptTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD1F457E19B242410099E89E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FDBE749719B313E500FD68B2 /* SystemConfiguration.framework */,
+				FDBE749519B313DA00FD68B2 /* MessageUI.framework */,
+				FDBE749319B313D500FD68B2 /* CoreLocation.framework */,
+				FDBE747D19B2E0D000FD68B2 /* QuartzCore.framework */,
+				FD1F471C19B2770C0099E89E /* AVFoundation.framework */,
+				FD1F471819B277070099E89E /* CoreData.framework */,
+				FD1F471919B277070099E89E /* CoreFoundation.framework */,
+				FD1F45C619B264BF0099E89E /* CoreImage.framework */,
+				FD1F45C419B264520099E89E /* libstdc++.6.0.9.dylib */,
+				18A3457E1A15C1340044BD1B /* TesseractOCR.framework */,
+				FD1F457F19B242410099E89E /* Foundation.framework */,
+				FD1F458119B242410099E89E /* CoreGraphics.framework */,
+				FD1F458319B242410099E89E /* UIKit.framework */,
+				FD1F45A119B242410099E89E /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FD1F458519B242410099E89E /* ProjectRefund */ = {
+			isa = PBXGroup;
+			children = (
+				FD1F45BA19B244640099E89E /* PRCamPreviewView.h */,
+				FD1F45BB19B244640099E89E /* PRCamPreviewView.m */,
+				FDBE746B19B2B70800FD68B2 /* RecieptItemStore.h */,
+				FDBE746C19B2B70800FD68B2 /* RecieptItemStore.m */,
+				FDBE746919B2B70800FD68B2 /* RecieptItem.h */,
+				FDBE746A19B2B70800FD68B2 /* RecieptItem.m */,
+				FDBE747419B2C1AD00FD68B2 /* PRTextParser.h */,
+				FDBE747519B2C1AD00FD68B2 /* PRTextParser.m */,
+				FD1F45D119B265580099E89E /* OCRScanner.h */,
+				FD1F473319B27E5B0099E89E /* OCRScanner.mm */,
+				FD1F458619B242410099E89E /* Supporting Files */,
+			);
+			path = ProjectRefund;
+			sourceTree = "<group>";
+		};
+		FD1F458619B242410099E89E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FDBE747719B2DB3000FD68B2 /* Images.xcassets */,
+				FD1F458F19B242410099E89E /* PRAppDelegate.m */,
+				FD1F458E19B242410099E89E /* PRAppDelegate.h */,
+				FD1F458719B242410099E89E /* Mobile Receipt-Info.plist */,
+				FD1F458819B242410099E89E /* InfoPlist.strings */,
+				FD1F458B19B242410099E89E /* main.m */,
+				FD1F458D19B242410099E89E /* Mobile Receipt-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FD1F45A719B242410099E89E /* ProjectRefundTests */ = {
+			isa = PBXGroup;
+			children = (
+				FD1F45AD19B242410099E89E /* ProjectRefundTests.m */,
+				FD1F45A819B242410099E89E /* Supporting Files */,
+			);
+			path = ProjectRefundTests;
+			sourceTree = "<group>";
+		};
+		FD1F45A819B242410099E89E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FD1F45A919B242410099E89E /* Mobile ReceiptTests-Info.plist */,
+				FD1F45AA19B242410099E89E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FDBE746319B2B62C00FD68B2 /* ImageProcessing */ = {
+			isa = PBXGroup;
+			children = (
+				FD1F472419B2794F0099E89E /* UIImage+Filters.h */,
+				FD1F472519B2794F0099E89E /* UIImage+Filters.m */,
+				FD1F473019B27DF20099E89E /* ImageProcessing.h */,
+				FD1F473119B27DF20099E89E /* ImageProcessing.mm */,
+			);
+			name = ImageProcessing;
+			sourceTree = "<group>";
+		};
+		FDBE746419B2B64700FD68B2 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FDBE749019B30A3C00FD68B2 /* PRPayPalViewController.h */,
+				FDBE749119B30A3C00FD68B2 /* PRPayPalViewController.m */,
+				FDBE747F19B2E14100FD68B2 /* PRTrendsViewController.h */,
+				FDBE748019B2E14100FD68B2 /* PRTrendsViewController.m */,
+				FDBE746519B2B70800FD68B2 /* RecieptDetailViewController.h */,
+				FDBE746619B2B70800FD68B2 /* RecieptDetailViewController.m */,
+				FDBE746D19B2B70800FD68B2 /* RecieptItemTableViewController.h */,
+				FDBE746E19B2B70800FD68B2 /* RecieptItemTableViewController.m */,
+				FD1F459719B242410099E89E /* PRViewController.h */,
+				FD1F459819B242410099E89E /* PRViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FDBE747919B2E0C000FD68B2 /* XYPieChart */ = {
+			isa = PBXGroup;
+			children = (
+				FDBE747A19B2E0C000FD68B2 /* XYPieChart.h */,
+				FDBE747B19B2E0C000FD68B2 /* XYPieChart.m */,
+			);
+			path = XYPieChart;
+			sourceTree = "<group>";
+		};
+		FDBE748619B3095500FD68B2 /* PayPalMobile */ = {
+			isa = PBXGroup;
+			children = (
+				18A345881A15C59E0044BD1B /* libPayPalMobile.a */,
+				18A345761A15BE7C0044BD1B /* PayPalConfiguration.h */,
+				18A345771A15BE7C0044BD1B /* PayPalFuturePaymentViewController.h */,
+				18A345781A15BE7C0044BD1B /* PayPalMobile.h */,
+				18A345791A15BE7C0044BD1B /* PayPalOAuthScopes.h */,
+				18A3457A1A15BE7C0044BD1B /* PayPalPayment.h */,
+				18A3457B1A15BE7C0044BD1B /* PayPalPaymentViewController.h */,
+				18A3457C1A15BE7C0044BD1B /* PayPalProfileSharingViewController.h */,
+			);
+			name = PayPalMobile;
+			path = "../../Frameworks:SDKs/PayPalMobile";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FD1F457B19B242410099E89E /* Mobile Receipt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD1F45B119B242410099E89E /* Build configuration list for PBXNativeTarget "Mobile Receipt" */;
+			buildPhases = (
+				FD1F457819B242410099E89E /* Sources */,
+				FD1F457919B242410099E89E /* Frameworks */,
+				FD1F457A19B242410099E89E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mobile Receipt";
+			productName = ProjectRefund;
+			productReference = FD1F457C19B242410099E89E /* Mobile Receipt.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FD1F459F19B242410099E89E /* Mobile ReceiptTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD1F45B419B242410099E89E /* Build configuration list for PBXNativeTarget "Mobile ReceiptTests" */;
+			buildPhases = (
+				FD1F459C19B242410099E89E /* Sources */,
+				FD1F459D19B242410099E89E /* Frameworks */,
+				FD1F459E19B242410099E89E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD1F45A619B242410099E89E /* PBXTargetDependency */,
+			);
+			name = "Mobile ReceiptTests";
+			productName = ProjectRefundTests;
+			productReference = FD1F45A019B242410099E89E /* Mobile ReceiptTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD1F457419B242410099E89E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PR;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = GeauxHack;
+				TargetAttributes = {
+					FD1F457B19B242410099E89E = {
+						DevelopmentTeam = 8G4H6268W7;
+					};
+					FD1F459F19B242410099E89E = {
+						TestTargetID = FD1F457B19B242410099E89E;
+					};
+				};
+			};
+			buildConfigurationList = FD1F457719B242410099E89E /* Build configuration list for PBXProject "Mobile Receipt" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FD1F457319B242410099E89E;
+			productRefGroup = FD1F457D19B242410099E89E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD1F457B19B242410099E89E /* Mobile Receipt */,
+				FD1F459F19B242410099E89E /* Mobile ReceiptTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FD1F457A19B242410099E89E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD1F459619B242410099E89E /* Main_iPad.storyboard in Resources */,
+				FD1F472319B279040099E89E /* tesseract-ios-lib in Resources */,
+				FDBE747819B2DB3000FD68B2 /* Images.xcassets in Resources */,
+				FDBE748319B2EE0300FD68B2 /* tessdata in Resources */,
+				FD1F459319B242410099E89E /* Main_iPhone.storyboard in Resources */,
+				FD1F458A19B242410099E89E /* InfoPlist.strings in Resources */,
+				FD1F472219B279040099E89E /* tesseract-ios in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD1F459E19B242410099E89E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD1F45AC19B242410099E89E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD1F457819B242410099E89E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18A345811A15C5690044BD1B /* PayPalConfiguration.h in Sources */,
+				18A345821A15C5690044BD1B /* PayPalFuturePaymentViewController.h in Sources */,
+				18A345831A15C5690044BD1B /* PayPalMobile.h in Sources */,
+				18A345841A15C5690044BD1B /* PayPalOAuthScopes.h in Sources */,
+				18A345851A15C5690044BD1B /* PayPalPayment.h in Sources */,
+				18A345861A15C5690044BD1B /* PayPalPaymentViewController.h in Sources */,
+				18A345871A15C5690044BD1B /* PayPalProfileSharingViewController.h in Sources */,
+				FD1F459019B242410099E89E /* PRAppDelegate.m in Sources */,
+				FD1F472619B2794F0099E89E /* UIImage+Filters.m in Sources */,
+				FDBE747C19B2E0C000FD68B2 /* XYPieChart.m in Sources */,
+				FDBE747319B2B70800FD68B2 /* RecieptItemTableViewController.m in Sources */,
+				FD1F45BC19B244640099E89E /* PRCamPreviewView.m in Sources */,
+				FD1F459919B242410099E89E /* PRViewController.m in Sources */,
+				FD1F458C19B242410099E89E /* main.m in Sources */,
+				FDBE749219B30A3C00FD68B2 /* PRPayPalViewController.m in Sources */,
+				FDBE747119B2B70800FD68B2 /* RecieptItem.m in Sources */,
+				FDBE747619B2C1AD00FD68B2 /* PRTextParser.m in Sources */,
+				FD1F473419B27E5B0099E89E /* OCRScanner.mm in Sources */,
+				FDBE748119B2E14100FD68B2 /* PRTrendsViewController.m in Sources */,
+				FDBE747219B2B70800FD68B2 /* RecieptItemStore.m in Sources */,
+				FDBE746F19B2B70800FD68B2 /* RecieptDetailViewController.m in Sources */,
+				FD1F473219B27DF20099E89E /* ImageProcessing.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD1F459C19B242410099E89E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD1F45AE19B242410099E89E /* ProjectRefundTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FD1F45A619B242410099E89E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD1F457B19B242410099E89E /* Mobile Receipt */;
+			targetProxy = FD1F45A519B242410099E89E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FD1F458819B242410099E89E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD1F458919B242410099E89E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FD1F459119B242410099E89E /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD1F459219B242410099E89E /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			path = ProjectRefund;
+			sourceTree = "<group>";
+		};
+		FD1F459419B242410099E89E /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD1F459519B242410099E89E /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			path = ProjectRefund;
+			sourceTree = "<group>";
+		};
+		FD1F45AA19B242410099E89E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD1F45AB19B242410099E89E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FD1F45AF19B242410099E89E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FD1F45B019B242410099E89E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FD1F45B219B242410099E89E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ProjectRefund/Mobile Receipt-Prefix.pch";
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "ProjectRefund/Mobile Receipt-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PayPalMobile",
+				);
+				OTHER_LDFLAGS = (
+					"-lc++",
+					"-ObjC",
+					"-lc++",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "Mobile Receipt";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FD1F45B319B242410099E89E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ProjectRefund/Mobile Receipt-Prefix.pch";
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "ProjectRefund/Mobile Receipt-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PayPalMobile",
+				);
+				OTHER_LDFLAGS = (
+					"-lc++",
+					"-ObjC",
+					"-lc++",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "Mobile Receipt";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FD1F45B519B242410099E89E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ProjectRefund.app/ProjectRefund";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ProjectRefund/ProjectRefund-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ProjectRefundTests/Mobile ReceiptTests-Info.plist";
+				PRODUCT_NAME = "Mobile ReceiptTests";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		FD1F45B619B242410099E89E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ProjectRefund.app/ProjectRefund";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ProjectRefund/ProjectRefund-Prefix.pch";
+				INFOPLIST_FILE = "ProjectRefundTests/Mobile ReceiptTests-Info.plist";
+				PRODUCT_NAME = "Mobile ReceiptTests";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD1F457719B242410099E89E /* Build configuration list for PBXProject "Mobile Receipt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD1F45AF19B242410099E89E /* Debug */,
+				FD1F45B019B242410099E89E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD1F45B119B242410099E89E /* Build configuration list for PBXNativeTarget "Mobile Receipt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD1F45B219B242410099E89E /* Debug */,
+				FD1F45B319B242410099E89E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD1F45B419B242410099E89E /* Build configuration list for PBXNativeTarget "Mobile ReceiptTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD1F45B519B242410099E89E /* Debug */,
+				FD1F45B619B242410099E89E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FD1F457419B242410099E89E /* Project object */;
+}
